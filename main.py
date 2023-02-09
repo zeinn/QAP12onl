@@ -1,16 +1,37 @@
-# This is a sample Python script.
+v_1 = -1.6  # Задание 1
+v_2 = 2.99
+v_3 = int(v_1)
+v_4 = int(v_2)
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+print(v_3)
+print(v_4)
 
+str = 'www.my_site.com#about'  # Задание 2
+str_1 = str.replace('#', '/')
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+print(str_1)
 
+str_new = 'stroka'  # Задание 3
+str_b = str_new.replace('a', 'ing')
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+print(str_b)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+str_fam = 'Ivanou'  # Задание 4
+str_name = 'Ivan'
+
+print(f"{str_name} {str_fam}")
+
+s = input().strip()  # Задание 5
+print(s)
+
+school = {'1a': 25, '2c': 18, '3b': 20, '4c': 28, '5a': 31, '6b': 16, '7a': 30, '8d': 15, '9a': 22,
+          '10b': 26}  # Задание 6
+print(school.get("5a"))
+
+str_2 = 'employment' # Задание 8
+str_3 = str_2.find('employ')
+print(str_3)
+
+x = 'My name is Agent Smith'
+x_1 = [1]
+print(x_1)
