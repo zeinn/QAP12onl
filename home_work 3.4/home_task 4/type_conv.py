@@ -31,3 +31,16 @@ def list(a):
 
 
 print(list(l_1))
+
+new_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+new_list.insert(3,20)
+new_list.pop(6)
+
+print(new_list)
+
+
+#a_dict = { 'a': 1, 'b': 2, 'c': 3}
+#b_dict = { 'c': 3, 'd': 4,'e': 5}
+
+#for key, value in a_dict.items():
+    # if key in b_dict
