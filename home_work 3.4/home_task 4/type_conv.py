@@ -33,14 +33,25 @@ def list(a):
 print(list(l_1))
 
 new_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-new_list.insert(3,20)
+new_list.insert(3, 20)
 new_list.pop(6)
 
 print(new_list)
 
+a = {'a': 1, 'b': 2, 'c': 3}
+b = {'c': 3, 'd': 4, 'e': 5}
+ab = {}
 
-#a_dict = { 'a': 1, 'b': 2, 'c': 3}
-#b_dict = { 'c': 3, 'd': 4,'e': 5}
+for key, value in a.items():
+    if key in b:
+        ab[key] = [a[key], b[key]]
+    else:
+        ab[key] = [value, None]
 
-#for key, value in a_dict.items():
-    # if key in b_dict
+for key, value in b.items():
+    if key in a:
+        ab[key] = [a[key], b[key]]
+    else:
+        ab[key] = [None, value]
+
+print(ab)
