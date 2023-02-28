@@ -24,16 +24,17 @@ def find_pos(a, b, c):
 
 print(find_pos(1, 2, -3))
 
-year = 1200
 
-if year % 4 != 0:
-    print('не Високосный год: 365 дней ', year)
-elif year % 100 != 0:
-    print('Високосный год: 366 дней', year)
-elif year % 400 != 0:
-    print('не Високосный год:365 дней ', year)
-else:
-    print('Високосный год: 366 дней', year)
+def name_of_days_in_year(year):
+    if year % 4:
+        return 365
+    elif year % 100:
+        return 366
+    elif year % 400:
+        return 365
+    else:
+        return 366
+print(name_of_days_in_year(1900))
 
 
 def name_of_day(day):
