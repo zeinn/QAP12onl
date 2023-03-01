@@ -25,7 +25,7 @@ def find_pos(a, b, c):
 print(find_pos(1, 2, -3))
 
 
-def name_of_days_in_year(year):
+def num_of_days_in_year(year):
     if year % 4:
         return 365
     elif year % 100:
@@ -34,7 +34,7 @@ def name_of_days_in_year(year):
         return 365
     else:
         return 366
-print(name_of_days_in_year(1900))
+print(num_of_days_in_year(1900))
 
 
 def name_of_day(day):
@@ -54,4 +54,20 @@ def name_of_day(day):
         return "воскресенье"
 
 
-print(name_of_day(5))
+print(name_of_day(7))
+
+
+def mass_convertor(unit, value):
+    if unit == 1:  # Kg
+        return value
+    elif unit == 2:  # mcg
+        return value * 1e-6
+    elif unit == 3:  # mg
+        return value * 1e-3
+    elif unit == 4:  # T
+        return value * 1e3
+    elif unit == 5:  # centner
+        return value * 1e2
+
+
+print(mass_convertor(3, 10000))

@@ -23,14 +23,14 @@ print(hello(name, city, country))
 l_1 = ["I", "love", "arrays", "they", "are", "my", "favorite"]
 
 
-def list(a):
+def list_t(a):
     if type(a) == list:
         return " ".join(a)
     else:
         return a
 
 
-print(list(l_1))
+print(list_t(l_1))
 
 new_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 new_list.insert(3, 20)
