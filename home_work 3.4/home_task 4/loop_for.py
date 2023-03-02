@@ -13,17 +13,18 @@ print(range_sum(2, 5))
 # Найти произведение положительных, сумму и количество отрицательных из 10 введенных целых значений.
 # def sum_natural(a, b)
 
-# dict_1 = {
-# "Бекиш Александр": 21.07,
-#  "Будник Алексей": 20.34,
-# "Гребень Анастасия": 22.12,
-# "Давидович Татьяна": 30,
-# "Дешук Дмитрий": 24.01,
-# "Казак Анна": 28.17,
-# }
+name_and_result = {
+    "Бекиш Александр": 21.07,
+    "Будник Алексей": 20.34,
+    "Гребень Анастасия": 22.12,
+    "Давидович Татьяна": 30,
+    "Дешук Дмитрий": 24.01,
+    "Казак Анна": 28.17,
+}
 
-# result = ''
-# def best_result(d):
-# for i in d:
-# if value == max(dict_1.values()):
-# return value, max(dict_1.values())
+def best_result(swimmers):
+    for key, value in swimmers.items():
+        if value == min(swimmers.values()):
+            return key, min(swimmers.values())
+
+print(best_result(name_and_result))
